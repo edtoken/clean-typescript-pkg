@@ -1,0 +1,51 @@
+{
+  "name": "clean-typescript-pkg",
+  "version": "0.0.1",
+  "description": "Very simple javascript package to help to configure the npm",
+  "main": "dist/main.js",
+  "types": "dist/main.d.js",
+  "repository": "https://github.com/edtoken/clean-typescript-pkg",
+  "keywords": [
+    "npm starter kit",
+    "javascript starter kit",
+    "starter kit",
+    "javascript package",
+    "clean javascript package",
+    "publish package",
+    "publish javascript package"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "Eduard Titov <editied@gmail.com>",
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.githubusercontent.com/edtoken/clean-typescript-pkg/master/LICENSE"
+    }
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --colors --coverage --setupFiles ./.env.js"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "testRegex": "^.+\\.spec\\.ts$"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.4",
+    "dotenv": "^8.0.0",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {}
+}
